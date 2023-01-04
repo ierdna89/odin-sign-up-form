@@ -23,12 +23,17 @@
 body {
   height: 100vh;
   font-family: 'Noto Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
+/*  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;*/
   background-color: var(--primary-dark);
   color: var(--primary-light);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
 }
 
 div > p {
@@ -36,6 +41,21 @@ div > p {
 	font-size: 4rem;
 }
 
-img,.odin-logo {
-	width: 80px;
+img, .odin-logo {
+	width: 5em;
+}
+
+.image-logo-section {
+  display: flex;
+  background-image: url("/img/green.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35vw;
+  height: 100vh;
+}
+
+.form-section {
+  width: 65vw;
+  height: 100vh;
+/*  border: 1px solid #000000;*/
 }
