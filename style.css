@@ -15,7 +15,7 @@
   --secondary-dark: #E5E7EB;
   --accent-color:#596D48;
   --dark-bg: rgba(0, 0, 0, 0.4);
-  --margin: calc(30px + 1.5625vw);
+  --margin-left: calc(30px + 1.5625vw);
 }
 
 * {
@@ -119,31 +119,31 @@ a:visited {
   font-weight: bold;
   position: relative;
   top: 5vh;
-  margin: 0em calc(30px + 5.2vw) 0 var(--margin);
+  margin: 0 calc(30px + 5.2vw) 0 var(--margin-left);
 }
  
 
 .subscribe-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin:  0.6em 0 0.8em var(--margin);
+  margin:  0.6em 0 0.8em var(--margin-left);
   color: var(--primary-dark);
 }
 
 
 form {
   max-width: 100%;
-  margin: 0.5em 10em 1.8em var(--margin);
+  margin: 0.5em calc(30px + 15.2vw) 1.8em var(--margin-left);
   display: grid;
   grid-auto-columns: 1fr;
   grid-column-gap: 5em;
-  grid-row-gap: 0.5em;
+/*  grid-row-gap: 1.5em;*/
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
 }
 
 form div {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-flow: column wrap;
   width: auto;
