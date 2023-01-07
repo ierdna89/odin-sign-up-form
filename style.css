@@ -14,7 +14,8 @@
   --primary-dark: #000000;
   --secondary-dark: #E5E7EB;
   --tertiary-dark: #404040;
-  --accent-color:#596D48;
+  --accent-color: #596D48;
+  --accent-color-two: #7A8A6C;
   --dark-bg: rgba(0, 0, 0, 0.4);
   --margin-left: calc(30px + 1.5625vw);
 }
@@ -123,7 +124,6 @@ a:visited {
   margin: 0 calc(30px + 5.2vw) 0 var(--margin-left);
 }
  
-
 .subscribe-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -131,37 +131,42 @@ a:visited {
   color: var(--primary-dark);
 }
 
-
 form {
   max-width: 100%;
   margin: 0.5em calc(30px + 15.2vw) 1.8em var(--margin-left);
   display: grid;
-  grid-auto-columns: 1fr;
+/*  grid-auto-columns: 1fr;*/
   grid-column-gap: 5em;
 /*  grid-row-gap: 1.5em;*/
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+/*  grid-template-rows: auto auto;*/
 }
 
 form div {
   margin-bottom: 1rem;
-  display: flex;
-  flex-flow: column wrap;
-  width: auto;
 }
-
 
 input{
   border: 1px solid var(--secondary-dark);
   border-radius: 5px;
   line-height: 2.2rem;
+  padding: 0 0 0 12px;
+  width: 100%;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  border-color: green;
 }
 
 label {
   font-size: 0.8rem;
   font-weight: bold;
   color: var(--tertiary-dark);
-  margin: 0 0 2px -;
+  margin: 0 0 3px 0;
 }
 
 button {
@@ -169,9 +174,21 @@ button {
   color: var(--primary-light);
   background-color: var(--accent-color);
   border-style: none;
+  cursor: pointer;
+  display: block;
   font-size: 1.2rem;
   padding: 0.5em 2em 0.5em 2em;
   border-radius: 5px;
+}
+
+button:disabled {
+  color: #888;
+  cursor: default;
+}
+
+button#create-account:not(:disabled):hover {
+  background-color: var(--accent-color-two);
+  color: white;
 }
 
 .log-in {
