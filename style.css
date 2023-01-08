@@ -49,7 +49,7 @@ body {
 
 .image-logo-section {
   display: flex;
-  background-image: url("/img/green.jpg");
+  background-image: url("./img/green.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   flex-direction: column;
