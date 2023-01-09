@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
   font-family: 'norse-bold';
@@ -27,7 +25,7 @@
 
 body {
   height: 100vh;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--primary-dark);
   color: var(--primary-light);
 }
@@ -78,6 +76,10 @@ body {
   font-size: 0.8rem;
 }
 
+a {
+  color: var(--primary-light);
+}
+
 a:visited {
   color: var(--primary-light);
 }
@@ -117,7 +119,7 @@ a:visited {
 
 .first-text {
   color: var(--primary-dark);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   position: relative;
   top: 5vh;
@@ -125,7 +127,7 @@ a:visited {
 }
  
 .subscribe-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin:  0.6em 0 0.8em var(--margin-left);
   color: var(--primary-dark);
@@ -152,6 +154,8 @@ input{
   line-height: 2.2rem;
   padding: 0 0 0 12px;
   width: 100%;
+  font-size: 1rem;
+  margin-top: 0px;
 }
 
 input:not(:focus):not(:placeholder-shown):invalid {
@@ -204,4 +208,108 @@ button#create-account:not(:disabled):hover {
 
 #log-in-link:visited {
   color: blue;
+}
+
+/*@media screen and (max-width: 767px) {
+
+  form {
+    max-width: 100%;
+    margin: 0.5em calc(30px + 15.2vw) 1.8em var(--margin-left);
+    display: grid;
+    grid-column-gap: 5em;
+    grid-template-columns: 1fr;
+  }
+}*/
+
+
+@media (max-width: 750px) {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-logo-section {
+    display: flex;
+/*    background-image: url("./img/green.jpg");*/
+    background-size: cover;
+/*    background-repeat: no-repeat;*/
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+  .odin-logo-bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+/*    position: relative;*/
+    top: 2.5vh;
+    height: 20vw;
+    width: 100vw;
+/*    background-color: var(--dark-bg);*/
+  }
+
+  .photo-credit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    font-size: 0.8rem;
+  }
+
+  .form-section {
+/*    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;*/
+    width: auto;
+    height: 100%;
+  }
+
+  .top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+/*  background-color: var(--secondary-light);*/
+  width: 100%;
+  height: 20vh;
+}
+
+  p.odin-text {
+    display: flex;
+  }
+
+  form {
+    max-width: 100%;
+    margin: 0.5em var(--margin-left) 1.8em var(--margin-left);
+    display: grid;
+    grid-row-gap: 1.2em;
+    grid-template-columns: 1fr;
+  }
+
+  input{
+    border: 1px solid var(--secondary-dark);
+    border-radius: 5px;
+/*    line-height: 2.6rem;*/
+    padding: 12px;
+    width: 100%;
+    font-size: 22px;
+    margin-top: 3px;
+  }
+
+  label {
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+  .first-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    top: 1vh;
+    margin: 0 calc(30px + 5.2vw) 0 var(--margin-left);
+  }
 }
