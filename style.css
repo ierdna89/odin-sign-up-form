@@ -135,13 +135,14 @@ a:visited {
 
 form {
   max-width: 100%;
-  margin: 0.5em calc(30px + 15.2vw) 1.8em var(--margin-left);
+  margin: 0.5em calc(15.2vw) 1.8em var(--margin-left);
   display: grid;
 /*  grid-auto-columns: 1fr;*/
   grid-column-gap: 5em;
 /*  grid-row-gap: 1.5em;*/
   grid-template-columns: 1fr 1fr;
 /*  grid-template-rows: auto auto;*/
+/*calc(30px + 15.2vw)*/
 }
 
 form div {
@@ -149,6 +150,7 @@ form div {
 }
 
 input{
+  box-sizing: border-box;
   border: 1px solid var(--secondary-dark);
   border-radius: 5px;
   line-height: 2.2rem;
@@ -270,46 +272,70 @@ button#create-account:not(:disabled):hover {
   }
 
   .top-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-/*  background-color: var(--secondary-light);*/
-  width: 100%;
-  height: 20vh;
-}
-
-  p.odin-text {
-    display: flex;
-  }
-
-  form {
-    max-width: 100%;
-    margin: 0.5em var(--margin-left) 1.8em var(--margin-left);
-    display: grid;
-    grid-row-gap: 1.2em;
-    grid-template-columns: 1fr;
-  }
-
-  input{
-    border: 1px solid var(--secondary-dark);
-    border-radius: 5px;
-/*    line-height: 2.6rem;*/
-    padding: 12px;
-    width: 100%;
-    font-size: 22px;
-    margin-top: 3px;
-  }
-
-  label {
-    font-size: 1rem;
-    margin: 0px;
+    height: 16vh;
   }
 
   .first-text {
     font-size: 1.2rem;
     font-weight: bold;
     position: relative;
-    top: 1vh;
-    margin: 0 calc(30px + 5.2vw) 0 var(--margin-left);
+    top: 0vh;
+    margin: 0 1em 0 1em ;
   }
+
+  .subscribe-title {
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0.6em 0 0.8em 1em;
+  }
+
+  p.odin-text {
+    display: flex;
+    font-size: 13vw;
+  }
+
+  form {
+    max-width: 100%;
+    margin: 0.5em 1.5em 1.8em 1.5em;
+    display: grid;
+    grid-row-gap: 1.2em;
+    grid-template-columns: 1fr;
+  }
+
+  input{
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-dark);
+    border-radius: 5px;
+/*    line-height: 2.6rem;*/
+    padding: 10px;
+    width: 100%;
+    font-size: 22px;
+    margin-top: 3px;
+  }
+
+  label {
+    font-size: 0.9rem;
+    margin: 0px;
+  }
+
+  button {
+    box-sizing: border-box;
+    margin: 2em 0 2em 1.5em;
+
+  }
+
+  .log-in {
+    margin:  0em 0 1.8em 1.5em;
+  }
+
+}
+
+
+@media only screen and (max-width: 540px) {
+
+  p.odin-text {
+    font-size: 13vw;
+  }
+
 }
