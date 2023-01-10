@@ -176,7 +176,7 @@ label {
 }
 
 button {
-  margin:  2em 0 1.8em var(--margin-left);
+  margin: 2em 1.5em 2em var(--margin-left);
   color: var(--primary-light);
   background-color: var(--accent-color);
   border-style: none;
@@ -212,6 +212,11 @@ button#create-account:not(:disabled):hover {
   color: blue;
 }
 
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
 /*@media screen and (max-width: 767px) {
 
   form {
@@ -239,7 +244,7 @@ button#create-account:not(:disabled):hover {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-}
+  }
 
   .odin-logo-bg {
     display: flex;
@@ -258,8 +263,8 @@ button#create-account:not(:disabled):hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 1em;
-    font-size: 0.8rem;
+    margin: 15px;
+/*    font-size: 0.5rem;*/
   }
 
   .form-section {
@@ -320,9 +325,7 @@ button#create-account:not(:disabled):hover {
   }
 
   button {
-    box-sizing: border-box;
-    margin: 2em 0 2em 1.5em;
-
+    margin: 2em 1.5em 2em 1.5em;
   }
 
   .log-in {
@@ -336,6 +339,18 @@ button#create-account:not(:disabled):hover {
 
   p.odin-text {
     font-size: 13vw;
+  }
+
+}
+
+@media only screen and (max-width: 464px) {
+
+  .first-text {
+    font-size: 4vw;
+    font-weight: bold;
+    position: relative;
+    top: 0vh;
+    margin: 0 1em 0 1em;
   }
 
 }

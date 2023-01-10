@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sign-Up Form</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<title>Sign-Up Form</title>
 </head>
 <body>
 	<!--HEADER-->
@@ -66,6 +67,7 @@
 						<div class="form-password">
 							<label for="password">PASSWORD</label>
 							<input id="password" name="password" type="password" placeholder=" " autocomplete="new-password" minlength="8" required>
+							<p class="error" id="error-text"></p>
 						</div>
 
 						<div class="form-confirm-password">
