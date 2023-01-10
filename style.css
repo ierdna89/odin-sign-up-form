@@ -234,7 +234,7 @@ button#create-account:not(:disabled):hover {
     align-items: center;
     top: 0vh;
     height: 20vw;
-    width: 100vw;
+    width: 100%;
   }
 
   .photo-credit {
