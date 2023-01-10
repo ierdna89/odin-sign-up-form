@@ -72,7 +72,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 1em;
+  margin: 1rem;
   font-size: 0.8rem;
 }
 
@@ -129,20 +129,16 @@ a:visited {
 .subscribe-title {
   font-size: 1.4rem;
   font-weight: bold;
-  margin:  0.6em 0 0.8em var(--margin-left);
+  margin: 0.6rem 0 0.8rem var(--margin-left);
   color: var(--primary-dark);
 }
 
 form {
   max-width: 100%;
-  margin: 0.5em calc(15.2vw) 1.8em var(--margin-left);
+  margin: 0.5rem calc(15.2vw) 1.8rem var(--margin-left);
   display: grid;
-/*  grid-auto-columns: 1fr;*/
   grid-column-gap: 5em;
-/*  grid-row-gap: 1.5em;*/
   grid-template-columns: 1fr 1fr;
-/*  grid-template-rows: auto auto;*/
-/*calc(30px + 15.2vw)*/
 }
 
 form div {
@@ -157,7 +153,6 @@ input{
   padding: 0 0 0 12px;
   width: 100%;
   font-size: 1rem;
-  margin-top: 0px;
 }
 
 input:not(:focus):not(:placeholder-shown):invalid {
@@ -176,14 +171,14 @@ label {
 }
 
 button {
-  margin: 2em 1.5em 2em var(--margin-left);
+  margin: 2rem 1.5rem 2rem var(--margin-left);
   color: var(--primary-light);
   background-color: var(--accent-color);
   border-style: none;
   cursor: pointer;
   display: block;
   font-size: 1.2rem;
-  padding: 0.5em 2em 0.5em 2em;
+  padding: 0.5rem 2rem 0.5rem 2rem;
   border-radius: 5px;
 }
 
@@ -198,7 +193,7 @@ button#create-account:not(:disabled):hover {
 }
 
 .log-in {
-  margin:  0em 0 1.8em var(--margin-left);
+  margin: 0 0 1.8rem var(--margin-left);
   color: var(--primary-dark);
   font-weight: bold;
 }
@@ -217,18 +212,6 @@ button#create-account:not(:disabled):hover {
   font-size: 0.8rem;
 }
 
-/*@media screen and (max-width: 767px) {
-
-  form {
-    max-width: 100%;
-    margin: 0.5em calc(30px + 15.2vw) 1.8em var(--margin-left);
-    display: grid;
-    grid-column-gap: 5em;
-    grid-template-columns: 1fr;
-  }
-}*/
-
-
 @media (max-width: 750px) {
 
   .wrapper {
@@ -238,11 +221,9 @@ button#create-account:not(:disabled):hover {
 
   .image-logo-section {
     display: flex;
-/*    background-image: url("./img/green.jpg");*/
     background-size: cover;
-/*    background-repeat: no-repeat;*/
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
   }
 
@@ -251,11 +232,9 @@ button#create-account:not(:disabled):hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-/*    position: relative;*/
-    top: 2.5vh;
+    top: 0vh;
     height: 20vw;
     width: 100vw;
-/*    background-color: var(--dark-bg);*/
   }
 
   .photo-credit {
@@ -263,8 +242,8 @@ button#create-account:not(:disabled):hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 15px;
-/*    font-size: 0.5rem;*/
+    margin: 0 0 0.5rem 0;
+    font-size: 0.6rem;
   }
 
   .form-section {
@@ -285,14 +264,14 @@ button#create-account:not(:disabled):hover {
     font-weight: bold;
     position: relative;
     top: 0vh;
-    margin: 0 1em 0 1em ;
+    margin: 0 1rem 0 1rem ;
   }
 
   .subscribe-title {
     box-sizing: border-box;
     font-size: 1.4rem;
     font-weight: bold;
-    margin: 0.6em 0 0.8em 1em;
+    margin: 0.6rem 0 0.8rem 1rem;
   }
 
   p.odin-text {
@@ -302,7 +281,7 @@ button#create-account:not(:disabled):hover {
 
   form {
     max-width: 100%;
-    margin: 0.5em 1.5em 1.8em 1.5em;
+    margin: 0.5rem 1rem 1.8rem 1rem;
     display: grid;
     grid-row-gap: 1.2em;
     grid-template-columns: 1fr;
@@ -313,7 +292,7 @@ button#create-account:not(:disabled):hover {
     border: 1px solid var(--secondary-dark);
     border-radius: 5px;
 /*    line-height: 2.6rem;*/
-    padding: 10px;
+    padding: 0.7rem;
     width: 100%;
     font-size: 22px;
     margin-top: 3px;
@@ -325,11 +304,12 @@ button#create-account:not(:disabled):hover {
   }
 
   button {
-    margin: 2em 1.5em 2em 1.5em;
+    margin: 2rem 0 2rem 1rem;
+    padding: 1rem 3rem 1rem 3rem;
   }
 
   .log-in {
-    margin:  0em 0 1.8em 1.5em;
+    margin:  0em 0 1.8rem 1rem;
   }
 
 }
@@ -350,7 +330,7 @@ button#create-account:not(:disabled):hover {
     font-weight: bold;
     position: relative;
     top: 0vh;
-    margin: 0 1em 0 1em;
+    margin: 0 1rem 0 1rem;
   }
 
 }
