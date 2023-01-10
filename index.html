@@ -42,7 +42,7 @@
 
 					<p class="subscribe-title">Let's do this!</p>
 
-					<form id="subscribeform" class="subscribe-form">
+					<form id="subscribeform" class="subscribe-form" action="http://httpbin.org/post" method="post">
 
 						<div class="form-first-name">
 							<label for="first-name">FIRST NAME</label>
@@ -56,12 +56,12 @@
 
 						<div class="form-email">
 							<label for="email">EMAIL</label>
-							<input id="email" name="email" type="email" value="" size="30" maxlength="100" placeholder=" " required>
+							<input id="email" name="email" type="email" autocomplete="email" maxlength="100" placeholder=" " required>
 						</div>
 
 						<div class="form-phone">
 							<label for="phone">PHONE NUMBER</label>
-							<input id="phone" name="phone" type="tel" autocomplete="tel" pattern="\d{3}\d{3}\d{4}" placeholder=" " required>
+							<input id="phone" name="phone" type="tel" autocomplete="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="US format: 123-456-7890">
 						</div>
 
 						<div class="form-password">

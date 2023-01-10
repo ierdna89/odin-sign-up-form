@@ -4,56 +4,23 @@ const errorText = document.getElementById("error-text");
 const createAccountButton = document.getElementById("create-account");
 const signupForm = document.getElementById("subscribeform");
 
-// function checkPassword() {
+signupForm.onsubmit = function(e) {
 
-// 	const enterPassword = document.getElementById("password").value;
-// 	const repeatPassword = document.getElementById("confirm-password").value;
+	const enterPassword = document.getElementById("password").value;
+	const repeatPassword = document.getElementById("confirm-password").value;
 
-// 	if (enterPassword != repeatPassword) {
-// 		errorText.innerHTML = "*Passwords don't match";
-// 		preventSubmit():
-// 	}
-// 	else {
-// 		errorText.innerHTML = "";
-// 	}
-// }
-
-// // listenEnterPassword.onkeyup = function() {checkPassword()};
-// // listenRepeatPassword.onkeyup = function() {checkPassword()};
-// createAccountButton.onclick = function() {checkPassword()};
-
-
-
-
-// function preventSubmit() {
-// 	signupForm.addEventListener("submit", 
-// 		function(event) {
-// 			event.preventDefault();
-// 		}
-// 	);
-// }
-
-
-
-
-createAccountButton.addEventListener("click", (e) =>
-	{	
-
-		const enterPassword = document.getElementById("password").value;
-		const repeatPassword = document.getElementById("confirm-password").value;
-		
-		if (enterPassword != repeatPassword) {
-			errorText.innerHTML = "*Passwords don't match";
-			listenEnterPassword.style.borderColor = "red";
-			listenRepeatPassword.style.borderColor = "red";
-			console.log("click");
-			event.preventDefault();
-		}
-		else {
-			console.log("poc");
-			listenEnterPassword.style.borderColor = "greeen";
-			listenRepeatPassword.style.borderColor = "green";
-			errorText.innerHTML = "";
-		}
-  	
-});
+	if (enterPassword === repeatPassword) {
+		listenEnterPassword.style.borderColor = "green";
+		listenRepeatPassword.style.borderColor = "green";
+		errorText.innerHTML = "";
+		alert('Signed up!');
+		// Disable on successful sign-up — but don't disable pending valid input!
+		createAccountButton.disabled = 'true';
+	}
+	else {
+		event.preventDefault();
+		errorText.innerHTML = "*Passwords don't match";
+		listenEnterPassword.style.borderColor = "red";
+		listenRepeatPassword.style.borderColor = "red";
+	}
+}

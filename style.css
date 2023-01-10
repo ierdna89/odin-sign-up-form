@@ -291,7 +291,6 @@ button#create-account:not(:disabled):hover {
     box-sizing: border-box;
     border: 1px solid var(--secondary-dark);
     border-radius: 5px;
-/*    line-height: 2.6rem;*/
     padding: 0.7rem;
     width: 100%;
     font-size: 22px;
